@@ -1,4 +1,4 @@
-from pygame import font
+from pygame import *
 
 class Text:
     """
