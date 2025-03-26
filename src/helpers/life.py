@@ -1,26 +1,44 @@
-from pygame import *
+from pygame import sprite, transform
 from helpers import constants
 
-
-''' Esta classe é responsável por representar as vidas disponíveis no
-jogo Space Invaders
-'''
-
 class Life(sprite.Sprite):
+    """
+    Classe que representa uma vida extra do jogador na interface.
+
+    Atributos:
+        image (Surface): Imagem redimensionada da nave do jogador.
+        rect (Rect): Área e posição da vida na tela.
+        game (object): Referência ao objeto principal do jogo.
+    """
+
     def __init__(self, xpos, ypos, game):
-        sprite.Sprite.__init__(self)
-        # Carrega a imagem do sprite a partir dos recursos do jogo
-        self.image = constants.IMAGES['ship']
-        # Redimensiona a imagem para um tamanho fixo de 25x25 pixels
-        self.image = transform.scale(self.image, (25, 25))
-        # Define o retângulo de colisão e posiciona no local especificado
+        """
+        Inicializa um indicador de vida extra.
+
+        Args:
+            xpos (int): Posição horizontal inicial.
+            ypos (int): Posição vertical inicial.
+            game (object): Referência ao objeto do jogo principal.
+        """
+        super().__init__()  
+        # Carrega e redimensiona a imagem da nave
+        self.image = transform.scale(
+            constants.IMAGES['ship'],  # Imagem original da nave
+            (25, 25)  # Dimensões desejadas
+        )
+
+        # Define a posição do indicador de vida
         self.rect = self.image.get_rect(topleft=(xpos, ypos))
-        # Mantém uma referência ao jogo para poder acessar a tela
+
+        # Referência ao jogo principal para acesso à tela
         self.game = game
-    
-    """
-    Função responsável por atualizar a posição e exibir a imagem na tela do jogo.
-    Esse método é chamado a cada frame para redesenhar o sprite.
-    """
+
     def update(self, *args):
+        """
+        Atualiza a exibição da vida na tela.
+        
+        Args:
+            *args: Argumentos variáveis (compatibilidade com sprite.Group)
+        """
+        # Renderiza a imagem na posição atual
         self.game.screen.blit(self.image, self.rect)
