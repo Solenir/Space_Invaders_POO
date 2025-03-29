@@ -38,7 +38,7 @@ class AliensGroup(sprite.Group):
         # Controle de tempo e posição
         self.timer = time.get_ticks()  # Último momento de movimento
         # Calcula a posição Y mais baixa da formação
-        self.bottom = game.enemyPosition + ((rows - 1) * 45) + 35
+        self.bottom = game.enemy_position + ((rows - 1) * 45) + 35
         
         # Controle de colunas ativas
         self.alive_columns = list(range(columns))  # Índices das colunas com aliens

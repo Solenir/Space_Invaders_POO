@@ -27,10 +27,10 @@ class MysteryExplosion(sprite.Sprite):
 
         # Cria o texto que mostra a pontuação obtida
         self.text = Text(
-            font=constants.FONT, 
+            text_font=constants.FONT, 
             size=20, 
             message=str(score), 
-            color=constants.WHITE,
+            color=constants.WHITE_COLOR,
             xpos=mystery.rect.x + 20,  # Centralizado horizontalmente
             ypos=mystery.rect.y + 6    # Centralizado verticalmente
         )

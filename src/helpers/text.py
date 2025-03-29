@@ -10,12 +10,12 @@ class Text:
         rect (Rect): Retângulo que define a posição e área do texto
     """
 
-    def __init__(self, textFont, size, message, color, xpos, ypos):
+    def __init__(self, text_font, size, message, color, xpos, ypos):
         """
         Inicializa o objeto de texto.
 
         Args:
-            textFont (str): Caminho para o arquivo de fonte ou nome da fonte do sistema
+            text_font (str): Caminho para o arquivo de fonte ou nome da fonte do sistema
             size (int): Tamanho da fonte em pixels
             message (str): Texto a ser exibido
             color (tuple): Cor do texto no formato RGB (ex: (255, 255, 255))
@@ -23,7 +23,7 @@ class Text:
             ypos (int): Posição vertical do texto
         """
         # Inicializa a fonte com o arquivo e tamanho especificados
-        self.font = font.Font(textFont, size)
+        self.font = font.Font(text_font, size)
         
         # Renderiza o texto na superfície
         self.surface = self.font.render(message, True, color)

@@ -38,7 +38,7 @@ class Mystery(sprite.Sprite):
         self.timer = time.get_ticks()  # Inicia o temporizador
 
         # Configuração de áudio
-        self.sound = mixer.Sound(constants.SOUND_PATH + 'mysteryentered.wav')
+        self.sound = mixer.Sound(constants.SOUND_PATH + 'mystery_entered.wav')
         self.sound.set_volume(0.3)  # Volume reduzido
         self.play_sound = True  # Permite tocar o som na próxima entrada
 
