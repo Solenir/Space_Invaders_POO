@@ -17,8 +17,8 @@ Se você não tiver o Python ou o Pygame instalado, basta clicar duas vezes no a
 Caso tenha a versão correta do Python e do Pygame instalada, você pode executar o jogo diretamente pelo terminal ou prompt de comando:
 
 ```sh
-cd SpaceInvaders
-python spaceinvaders.py
+cd src
+python space_invaders.py
 ```
 
 ### 🎮 Controles do Jogo
