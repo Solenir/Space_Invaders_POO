@@ -4,7 +4,7 @@ from helpers.text import Text
 
 class MysteryExplosion(sprite.Sprite):
     """
-    Classe que representa a explosão/efeito visual quando um nabe é destruída.
+    Classe que representa a explosão/efeito visual quando um nave é destruída.
     Antes de desaparecer mostra a pontuação obtida.
 
     Atributos:

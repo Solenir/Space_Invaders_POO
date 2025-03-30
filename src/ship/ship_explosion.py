@@ -20,7 +20,7 @@ class ShipExplosion(sprite.Sprite):
         """
         super(ShipExplosion, self).__init__(*groups)
         
-        # Usa a mesma imagem da nave para a explosão (considerar trocar por imagem de explosão)
+        # Usa a mesma imagem da nave para a explosão
         self.image = constants.IMAGES['ship']
         
         # Posiciona a explosão no mesmo local da nave

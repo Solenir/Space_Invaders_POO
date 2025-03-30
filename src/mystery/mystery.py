@@ -3,7 +3,7 @@ from helpers import constants
 
 class Mystery(sprite.Sprite):
     """
-    Classe que representa a nave misteriosa  que aparece ocasionalmente no topo da tela.
+    Classe que representa a nave misteriosa que aparece ocasionalmente no topo da tela.
     Herda de sprite.Sprite para integração com os grupos de sprites do Pygame.
 
     Atributos:
