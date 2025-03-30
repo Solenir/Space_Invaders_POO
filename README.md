@@ -17,8 +17,8 @@ Se você não tiver o Python ou o Pygame instalado, basta clicar duas vezes no a
 Caso tenha a versão correta do Python e do Pygame instalada, você pode executar o jogo diretamente pelo terminal ou prompt de comando:
 
 ```sh
-cd SpaceInvaders
-python spaceinvaders.py
+cd src
+python space_invaders.py
 ```
 
 ### 🎮 Controles do Jogo
@@ -45,21 +45,38 @@ pip install pygame
 ## 📂 Estrutura do Projeto
 A estrutura do diretório do projeto é organizada da seguinte forma:
 ```
-SpaceInvaders/
-│── spaceinvaders.py  # Arquivo principal do jogo
-│── assets/
+src/
+│── space_invaders.py   # Arquivo principal do jogo
+│── space_invaders.exe  # Arquivo executável do jogo
+│── alien/
+│   ├── alien.py            # Arquivo que representa o alienígena
+│   ├── alien_explosion.py  # Arquivo que representa a explosão de um alienígena
+│   ├── alien_group.py      # Arquivo que representa o conjunto de alienígenas
+│── mystery/
+│   ├── mystery.py            # Arquivo que representa a nave que aparece de tempo em tempo
+│   ├── mystery_explosion.py  # Arquivo que representa a explosão da nave que ocasionalmente aparece
+│── ship/
+│   ├── ship.py            # Arquivo que representa a nave amiga
+│   ├── ship_explosion.py  # Arquivo que representa a explosão da nave amiga
+│── helpers/
+│   ├── blocker.py   # Arquivo que representa os blocos de proteção da nave amiga
+│   ├── bullet.py    # Arquivo que representa o projétil utilizado no jogo
+│   ├── life.py      # Arquivo que representa as vidas do jogo
+│   ├── text.py      # Arquivo que representa textos utilizados no jogo
+│   ├── constants.py # Arquivo que armazena as constantes utilizadas pelo jogo
+assets/
 │   ├── images/       # Sprites e gráficos do jogo
 │   ├── sounds/       # Efeitos sonoros
 │   ├── fonts/        # Fontes utilizadas no jogo
-│── README.md         # Documentação do projeto
+README.md             # Documentação do projeto
 ```
+## Principais Telas do Jogo
 
+![Tela Inicial](https://github.com/user-attachments/assets/d5055d0d-055b-4d5b-8bb6-8d5abcd86d0e)
+![Tela do Jogo](https://github.com/user-attachments/assets/a305d43c-10e4-4ec0-9023-1b56988fe390)
 
 ## 🤝 Contribuição
 Se quiser contribuir para melhorias no jogo, sinta-se à vontade para criar um *fork* do repositório, realizar suas alterações e abrir um *pull request*.
-
-## 📜 Licença
-Este projeto é distribuído sob a licença MIT. Sinta-se livre para modificá-lo e compartilhá-lo!
 
 ---
 Divirta-se jogando Space Invaders! 🚀👾
