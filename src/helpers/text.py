@@ -42,7 +42,7 @@ class Text:
 
     def update_text(self, new_message, new_color=None):
         """
-        Atualiza o texto exibido e opcionalmente sua cor.
+        Atualiza o texto exibido e opcionalmente uma nova cor.
 
         Args:
             new_message (str): Novo texto a ser exibido
