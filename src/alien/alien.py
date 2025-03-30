@@ -15,8 +15,8 @@ class Alien(sprite.Sprite):
         self._load_images()  # Carrega as imagens para animação
         self.index = 0 # Índice da imagem atual
         self.image = self.images[self.index] # Define a imagem inicial
-        self.rect = self.image.get_rect() # Referência ao objeto do jogo
-        self.game = game
+        self.rect = self.image.get_rect() 
+        self.game = game # Referência ao objeto do jogo
 
     
     def _toggle_image(self):
