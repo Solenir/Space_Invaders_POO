@@ -47,7 +47,6 @@ A estrutura do diretório do projeto é organizada da seguinte forma:
 ```
 src/
 │── space_invaders.py   # Arquivo principal do jogo
-│── space_invaders.exe  # Arquivo executável do jogo
 │── alien/
 │   ├── alien.py            # Arquivo que representa o alienígena
 │   ├── alien_explosion.py  # Arquivo que representa a explosão de um alienígena
