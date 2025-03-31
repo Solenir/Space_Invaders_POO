@@ -7,12 +7,6 @@ Space Invaders é um jogo de arcade clássico lançado em 1978 pela Taito e se t
 Este projeto é uma recriação do Space Invaders utilizando Python e a biblioteca Pygame.
 
 ## 🚀 Como Jogar
-
-### 🖥️ Executando o Arquivo Executável (.exe)
-Se você não tiver o Python ou o Pygame instalado, basta clicar duas vezes no arquivo `.exe` para iniciar o jogo.
-
-**Nota:** Certifique-se de que o arquivo `.exe` esteja no mesmo diretório que as pastas `sounds`, `images` e `fonts`, pois elas contêm os recursos necessários para o jogo funcionar corretamente.
-
 ### 🐍 Executando pelo Python
 Caso tenha a versão correta do Python e do Pygame instalada, você pode executar o jogo diretamente pelo terminal ou prompt de comando:
 
@@ -47,7 +41,6 @@ A estrutura do diretório do projeto é organizada da seguinte forma:
 ```
 src/
 │── space_invaders.py   # Arquivo principal do jogo
-│── space_invaders.exe  # Arquivo executável do jogo
 │── alien/
 │   ├── alien.py            # Arquivo que representa o alienígena
 │   ├── alien_explosion.py  # Arquivo que representa a explosão de um alienígena
