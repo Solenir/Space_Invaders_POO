@@ -63,7 +63,7 @@ class SpaceInvaders(object):
     def _setup_text_elements(self):
         """Configura todos os elementos de texto usados no jogo."""
         self.welcome_text = Text(constants.FONT, 50, 'Bem-vindo(a)', constants.WHITE_COLOR, 190, 300)
-        self.title_text2 = Text(constants.FONT, 25, 'Presione qualquer tecla para continuar', 
+        self.title_text2 = Text(constants.FONT, 25, 'Pressione qualquer tecla para continuar', 
                              constants.WHITE_COLOR, 80, 400)
         self.game_over_text = Text(constants.FONT, 50, 'Fim do Jogo!', constants.WHITE_COLOR, 250, 270)
         self.next_round_text= Text(constants.FONT, 50, 'Proxima rodada', constants.WHITE_COLOR, 240, 270)
